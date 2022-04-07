@@ -3,6 +3,7 @@ const express = require('express');
 const sequelize = require('./db');
 const models = require('./models/models.js');
 const cors = require('cors');
+const router = require('./routes/index');
 
 const PORT = process.env.PORT || 5000;
 
@@ -11,6 +12,7 @@ const app = express();
 app.use(cors());
 // set up that our app can parse .json format
 app.use(express.json());
+app.use('/api', router);
 
 // checking if server is working
 // app.get('/', (req, res) => {
