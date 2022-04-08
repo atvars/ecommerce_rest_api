@@ -4,7 +4,8 @@ class UserController {
   async login(req, res) {}
 
   async check(req, res) {
-    res.json('Im working');
+    const { id } = req.query;
+    res.json(id);
   }
 }
 
