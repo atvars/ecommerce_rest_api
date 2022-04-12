@@ -3,6 +3,7 @@ const express = require('express');
 const sequelize = require('./db');
 const models = require('./models/models.js');
 const cors = require('cors');
+const fileUpload = require('express-fileupload');
 const router = require('./routes/index');
 const errorHandler = require('./middleware/ErrorHandlinMiddleware');
 
@@ -13,9 +14,10 @@ const app = express();
 app.use(cors());
 // set up that our app can parse .json format
 app.use(express.json());
+app.use(fileUpload({}))
 app.use('/api', router);
 
-// error handling middleware should be last 
+// error handling middleware should be last
 app.use(errorHandler);
 
 // checking if server is working
