@@ -42,9 +42,15 @@ class UserController {
     return res.json({ token });
   }
 
+  async delete(req, res) {
+    const { userId } = req.body;
+    const user = await User.delete({ userId });
+    return res.json(user);
+  }
+
   async check(req, res, next) {
-    const token = generateJwt(req.user.id, req.user.email, req.user.role)
-    return res.json({token})
+    const token = generateJwt(req.user.id, req.user.email, req.user.role);
+    return res.json({ token });
   }
 }
 
