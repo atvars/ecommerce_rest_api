@@ -8,17 +8,14 @@
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+
 
 ## General info
 
 The purpose of this project is to help me to better understand Node.js, Express.js, postgreSQL.
 ## Screenshots
 
-![Example screenshot]('screanshots/ecommerce-rest-api-diogram.png)
+![Example screenshot]('ecommerce_rest_api/screanshots/ecommerce-rest-api-diogram.png)
 
 ## Technologies
 
