@@ -15,7 +15,7 @@
 The purpose of this project is to help me to better understand Node.js, Express.js, postgreSQL.
 ## Screenshots
 
-![Example screenshot]('server/screanshots/ecommerce-rest-api-diogram.png)
+![Example screenshot]('./ecommerce-rest-api-diogram.png)
 
 ## Technologies
 
